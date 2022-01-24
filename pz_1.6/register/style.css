@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+
+    height: 100vh;
+}
+
+/* Header */
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    height: 80px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+
+    background-color: #536dff;
+
+    border-bottom: 2px red solid;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 3px;
+}
+
+.logo__title {
+    font-size: 2rem;
+    font-weight: 600;
+
+    font-weight: bold;
+}
+
+.logo__profile {
+    padding-left: 2.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__login-login .header__login-sign-up {
+    padding: 10px;
+}
+
+.header__login-sign-in {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+
+/* Content */
+.content {
+    height: calc(100% - 170px - 80px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.register-form-container {
+    width: 30rem;
+
+    border: 1px solid #555;
+}
+
+.register-form-container__title {
+    height: 3rem;
+    width: 100%;
+
+    background-color: #536dff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #f0f0f0;
+    font-weight: 700;
+}
+
+.register-form {
+    height: 25rem;
+    margin: 30px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form__text-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+}
+
+.register-form__label {
+    width: 100%;
+    padding-bottom: 0.3rem;
+}
+
+.register-form__text {
+    width: 100%;
+    font-size: 1.2rem;
+    height: 1.5rem;
+}
+
+.register-form__submit-wrapper {
+    width: 80%;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.register-form__submit {
+    height: 2rem;
+    width: 5rem;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 170px;
+    background-color: #555;
+
+    color: #fff;
+    font-size: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer__right {
+
+}
+
+.footer__developer {
+
+}

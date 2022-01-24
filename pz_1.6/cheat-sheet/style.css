@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+
+    height: 100vh;
+}
+
+/* Header */
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    height: 80px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+
+    background-color: #536dff;
+
+    border-bottom: 2px red solid;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 3px;
+}
+
+.logo__title {
+    font-size: 2rem;
+    font-weight: 600;
+
+    font-weight: bold;
+}
+
+.logo__profile {
+    padding-left: 2.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__login-login .header__login-sign-up {
+    padding: 10px;
+}
+
+.header__login-sign-in {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+
+/* Content */
+.content {
+    /* height: calc(100% - 170px - 80px); */
+
+    padding: 0 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+
+    gap: 1rem;
+
+    /* padding-bottom: 3rem; */
+
+}
+.sheet-block {
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 2rem;
+}
+
+.sheet-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sheet-element {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.7rem;
+}
+
+.sheet-element__description {
+    color:#999;
+    margin-bottom:0.2rem;
+}
+
+.sheet-element__command {
+font-family: 'Courier New', Courier, monospace;
+font-weight: 700;
+/* font-size: 1.5rem; */
+}
+
+.light-blue {
+    color: #5fbff0;
+}
+
+.gray-blue {
+    color: #468db1;
+}
+
+.salade {
+    color: #92c744;
+}
+
+.dark-haki {
+    color: #63a14b;
+}
+
+.tomato {
+    color: #ee6e42;
+}
+
+.indian-red {
+    color: #c06240;
+}
+
+
+
+/* Footer */
+.footer {
+    left: 0;
+    bottom: 0;
+    
+    width: 100%;
+    height: 170px;
+    background-color: #555;
+
+    color: #fff;
+    font-size: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer__right {
+
+}
+
+.footer__developer {
+
+}
