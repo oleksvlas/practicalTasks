@@ -18,6 +18,11 @@ h2{
 	margin: 0;
 }
 
+html,
+body{
+	height: 100%;
+}
+
 a{
 	margin: 0;
 	padding: 0;
