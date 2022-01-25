@@ -1,0 +1,81 @@
+.my-head{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(49, 58, 117);
+    border-bottom: solid rgb(170, 105, 57) 5px;
+}
+h1{
+    font: bold 32px Arial, Verdana;
+    padding: 25px 0px 0px 30px;
+}
+h2{
+    font: bold 18px Arial, Verdana;
+    padding: 5px 0px 0px 60px;
+    color: blanchedalmond;
+}
+.links{
+    font: bold 24px Arial, Verdana;
+    color: rgb(197, 190, 79);
+    text-decoration: none;
+    text-align: right;
+}
+.authorized-container {
+   display: flex;
+   align-items: center;
+}
+.authorized-container > .first-link {
+    padding-right: 15px;
+}
+.main-field{
+    display: flex;
+    justify-content: space-around;
+}
+.hds{
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(68, 115, 168);
+}
+.row{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.command{
+    font-family: Consolas;
+    font-weight: bold;
+    padding: 5px 0px 10px 0px;
+}
+#hd1{
+    color: rgb(67, 43, 177);
+}
+#hd2{
+    color: rgb(43, 177, 43);
+}
+#hd3{
+    color: rgb(44, 146, 4);
+}
+#hd4{
+    color: rgb(190, 53, 49);
+}
+#hd5{
+    color: rgb(194, 58, 24);
+}
+
+.boot{
+    background-color: rgb(93, 93, 93);
+    height: 100px;
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+    bottom:0;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 30px;
+    font: bold 18px Arial, Verdana;
+}
+.orient{
+    display: flex;
+    flex-direction: column;
+}

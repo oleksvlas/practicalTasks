@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/git_style.css">
+    <link rel="stylesheet" href="css/nullstyle.css">
+    <title>Git</title>
+</head>
+<body>
+    <header class="my-head">
+        <div>
+         <h1>Мій особистий блог</h1>
+         <h2>Манжай Георгій</h2>
+        </div>
+        <div class="authorized-container">
+            <a class = "links first-link" href="login.html">Вхід</a>
+            <a class = "links" href="">Реєстрація</a>
+        </div>
+    </header>
+   <div class="main-field">
+
+       <div class="row">
+           <p><p class="hds">Create a Repository</p>From scratch -- Create a new local repository
+           <p class="command">$git init [name]</p>Download from an existing repository<p class="command">$git clone my_url</p> <p class="hds" id="hd1">Observe your Repository</p>
+           List new modified files not yet commited
+           <p class="command">$git status</p>
+           Show the changes to files not yet stugged
+           <p class="command">$git diff</p>Show all changes to stagged file<p class="command">$git diff -- catched</p>Show all stagged and unstagged changes<p class="command">$git diff HEAD</p>Show changes between two commits ;ids<p class="command">$git diff commit1 commit2</p>
+           List the change dates authors for a file<p class="command">$git blame[file]</p>Show the changes for a commit id<p class="command">$git show[commit]:[file]</p>Show full history<p class="command">$git log</p>
+
+        </p>
+       </div>
+
+       <div class="row"><p><p class="hds" id="hd2">Working with Branches</p>List local branches
+        <p class="command">$git branches</p>List all branches<p class="command">$git branch -av</p>
+        Switch branch
+        <p class="command">$git checkout my_branch</p>
+        Create new branch<p class="command">$git branch new_branch</p>
+        Delete branch<p class="command">$git branch -d ny_branch</p>
+        Merge branch<p class="command">$git checkout branch branch_b</p>
+        <p class="command">$git checkout merge branch_a</p>
+        </p>
+    </div>
+
+       <div class="row"><p><p class="hds" id="hd3">Make a change</p>Stages the file ready to commit
+        <p class="command">$git add [file]</p>Stage all changes file ready to commit<p class="command">$git add .</p>
+        Commit all changed files
+        <p class="command">$git commit -m "commit message"</p></div>
+
+        <div class="row"><p><p class="hds" id="hd4">Synchronize</p>Get the lattest changes from origin
+            <p class="command">$git fetch</p>Fetch the lastest changes from origin<p class="command">$git pull</p> Fetch the lastest changes from origin rebase<p class="command">$git pull --rebase</p> <p class="hds" id="hd5">Finally!</p>
+            When in doubt use help
+            <p class="command">$git command help</p><p>
+                Or visit <a href="https://training.github.com/">https://training.github.com/</a> for official GitHub training
+            </p></div>
+
+   </div>
+    <footer class="boot">© курсант 292 групи Манжай Георгій</footer>
+</body>
+</html>
