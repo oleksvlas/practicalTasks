@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/register_style.css">
+    <link rel="stylesheet" href="css/nullstyle.css">
+    <title>Реєстрація користувача</title>
 </head>
 <body>
     <header class="my-head">
@@ -17,6 +19,52 @@
             <a class = "links" href="">Реєстрація</a>
         </div>
     </header>
+    <div class="my-content">
+        <div class="login-block">
+            <div class="login-header">
+                <p class="head">Реєстрація користувача</p>
+            </div>
+            <div>
+             <div class="content">
+                 Прізвище:
+                 <form class="login" method="post" action="#">
+                     <input type="text"></input> 
+                  </form>
+                  Ім'я:
+                 <form class="login" method="post" action="#">
+                     <input type="text"></input> 
+                  </form>
+                  Логін:
+                  <form class="login" method="post" action="#">
+                      <input type="text"></input> 
+                   </form>
+                   <p>Група:</p>
+                   <select name="pets" id="group">
+                    <option value="">Обрати групу</option>
+                    <option value="dog">291</option>
+                    <option value="cat">292</option>
+                    <option value="hamster">293</option>
+                </select>
+                <p>Пароль:</p>
+                 <form class="password" method="post" action="#">
+                     <input type="password"></input> 
+                  </form>
+                  Підтвердити
+                  пароль:
+                 <form class="password" method="post" action="#">
+                     <input type="password"></input> 
+                  </form>
+                  
+             </div>
+             <form class="send" method="post" action="#">
+                 <input type="submit" value="Реєстрація"></input> 
+              </form>
+            </div>
+         
+        </div>
+     </div>
+     
+    </div>
     <footer class="boot">© курсант 292 групи Манжай Георгій</footer>
 </body>
 </html>
