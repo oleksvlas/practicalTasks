@@ -157,11 +157,13 @@ color: #C8C8C8;
 	width: 300px;
 	margin-left:200px;
 	font-family: sans-serif ;
+	text-indent:0px;
 }
 .div1{
 	width: 300px;
 	margin-left: 5%;
 	font-family: sans-serif;
+	text-indent:0px;
 }
 #text {
 	color: #707070;
