@@ -139,7 +139,10 @@ button {
     cursor: pointer;
     width: 100%;
 }
-
+.btn_enter {
+    background-color: #f44336;
+    color: black;
+}
 button:hover {
     opacity: 0.8;
 }
@@ -158,12 +161,11 @@ button:hover {
 span.pswrd {
     float: right;
     padding-top: 16px;
-
+}
 .button_href {
     text-decoration: none;
     color: black;
 }
-
 /* Commands */
 .t {
     font-size: 14px;
