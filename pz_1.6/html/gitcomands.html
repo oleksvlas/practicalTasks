@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/styles.css" type="text/css">
+	<title>Git commands</title>
+</head>
+
+<body>
+	<div id="header">
+		<div class="container_for_head d-flex">
+			<div class="h_tags">
+				<h1 class="h1_head">Мій особистий блог</h1>
+				<h2 class="h2_head">Бурда Євген Андрійович</h2>
+			</div>
+			<div class="links">
+				<a href="login.html">Вхід</a>
+				<a href="login.html">Реєстрація</a>
+			</div>
+		</div>
+	</div>
+	<!-- /#header -->
+	<div id="main">
+		<div class="commands">
+			<div class="container">
+				<div class="row">
+					<div class="first-column">
+						<h2 id="create_header" class="column_header"><b>Create a Repository</b></h2>
+						<p class="t">
+							From scratch -- Create a new local repository
+						</p>
+						<p class="c">
+							$ git init [project name]
+						</p>
+
+						<p class="t">
+							Download from an existing repository
+						</p>
+						<p class="c">
+							$ git clone my_url
+						</p>
+
+						<h2 id="observer_header" class="column_header"><b>Observe your Repository</b></h2>
+						<p class="t">
+							List ne or modified files not yet commited
+						</p>
+						<p class="c">
+							$ git status
+						</p>
+
+						<p class="t">
+							Show the changes to files not yet staged
+						</p>
+						<p class="c">
+							$ git diff
+						</p>
+
+						<p class="t">
+							Show the changes to staged files
+						</p>
+						<p class="c">
+							$ git diff --cached
+						</p>
+
+						<p class="t">
+							Show all staged and unstaged file changes
+						</p>
+						<p class="c">
+							$ git diff HEAD
+						</p>
+
+						<p class="t">
+							Show the changes between two commit, ids
+						</p>
+						<p class="c">
+							$ git diff comit1 comit2
+						</p>
+
+						<p class="t">
+							List the change dates and authors for a file
+						</p>
+						<p class="c">
+							$ git blame [file]
+						</p>
+
+						<p class="t">
+							Show the file changes for a commit id and/or file
+						</p>
+						<p class="c">
+							$ git show [commit]:[file]
+						</p>
+
+						<p class="t">
+							Show full change history
+						</p>
+						<p class="c">
+							$ git log
+						</p>
+
+						<p class="t">
+							Show change history for file/directory including diffs
+						</p>
+						<p class="c">
+							$ git log -p [file/directory]
+						</p>
+					</div>
+					<div class="second_column">
+						<h2 id="work_header" class="column_header">Working with Branches</h2>
+						<p class="t">
+							List local branches
+						</p>
+						<p class="c">
+							$ git branch
+						</p>
+
+						<p class="t">
+							List all branches, local and remote
+						</p>
+						<p class="c">
+							$ git branch -av
+						</p>
+
+						<p class="t">
+							Switch to a branch, my_branch, and update working directory
+						</p>
+						<p class="c">
+							$ git checkout my_branch
+						</p>
+
+						<p class="t">
+							Create a new branch called new_branch
+						</p>
+						<p class="c">
+							$ git branch new_branch
+						</p>
+
+						<p class="t">
+							Delete the branch called my_branch
+						</p>
+						<p class="c">
+							$ git branch -d my_branch
+						</p>
+
+						<p class="t">
+							Merge branch_a into branch_b
+						</p>
+						<p class="c">
+							$ git checkout branch_b
+							$ git merge branch_a
+						</p>
+
+						<p class="t">
+							Tag the current commit
+						</p>
+						<p class="c">
+							$ git tag my_tag
+						</p>
+					</div>
+					<div class="third_column">
+						<h2 id="make_header" class="column_header"><b>Make a change</b></h2>
+						<p class="t">
+							Stages the file, ready for commit
+						</p>
+						<p class="c">
+							$ git add [file]
+						</p>
+
+						<p class="t">
+							Stage all changed files to versioned history
+						</p>
+						<p class="c">
+							$ git commit -n "commit message"
+						</p>
+
+						<p class="t">
+							Commit all your tracked files to versioned history
+						</p>
+						<p class="c">
+							$ git commit -an "commit message"
+						</p>
+
+						<p class="t">
+							Unstages file, keeping the file changes
+						</p>
+						<p class="c">
+							$ git reset [file]
+						</p>
+
+						<p class="t">
+							Revert everything to the last Commit
+						</p>
+						<p class="c">
+							$ git reset --hard
+						</p>
+					</div>
+					<div class="fourth_column">
+						<h2 id="synchronize_header" class="column_header"><b>Synchronize</b></h2>
+						<p class="t">
+							Get the latest changes from origin(no merge)
+						</p>
+						<p class="c">
+							$ git fetch
+						</p>
+
+						<p class="t">
+							Fetch the latest changes from origin and merge
+						</p>
+						<p class="c">
+							$ fit pull
+						</p>
+
+						<p class="t">
+							Fetch the latest changes from origin and rebase
+						</p>
+						<p class="c">
+							$ git pull --rebase
+						</p>
+
+						<p class="t">
+							Push local chamges to the origin
+						</p>
+						<p>
+							$ git push
+						</p>
+
+						<h2 id="finally_header" class="column_header"><b>Finally!</b></h2>
+						<p class="t">
+							When doubt, use git help
+						</p>
+						<p class="c">
+							$ git command --help
+						</p>
+						<p class="t">
+							Or visit <a href="https://github.com/">https://github.com/</a> for official GitHub training.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--#Main-->
+	<footer id="footer">
+		<div class="footer">
+			<div class="t_for_footer">
+				<p>© Всі права захищені.</p>
+				<p>Розробник : курсант 291 навчальної групи Бурда Євген Андрійович</p>
+			</div>
+		</div>
+		<!-- /.footer -->
+	</footer>
+</body>
+
+</html>
