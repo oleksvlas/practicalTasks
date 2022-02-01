@@ -29,197 +29,197 @@
 				<div class="row">
 					<div class="first-column">
 						<h2 id="create_header" class="column_header"><b>Create a Repository</b></h2>
-						<p class="t">
+						<p class="text_p">
 							From scratch -- Create a new local repository
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git init [project name]
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Download from an existing repository
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git clone my_url
 						</p>
 
 						<h2 id="observer_header" class="column_header"><b>Observe your Repository</b></h2>
-						<p class="t">
+						<p class="text_p">
 							List ne or modified files not yet commited
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git status
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Show the changes to files not yet staged
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git diff
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Show the changes to staged files
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git diff --cached
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Show all staged and unstaged file changes
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git diff HEAD
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Show the changes between two commit, ids
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git diff comit1 comit2
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							List the change dates and authors for a file
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git blame [file]
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Show the file changes for a commit id and/or file
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git show [commit]:[file]
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Show full change history
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git log
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Show change history for file/directory including diffs
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git log -p [file/directory]
 						</p>
 					</div>
 					<div class="second_column">
 						<h2 id="work_header" class="column_header">Working with Branches</h2>
-						<p class="t">
+						<p class="text_p">
 							List local branches
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git branch
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							List all branches, local and remote
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git branch -av
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Switch to a branch, my_branch, and update working directory
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git checkout my_branch
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Create a new branch called new_branch
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git branch new_branch
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Delete the branch called my_branch
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git branch -d my_branch
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Merge branch_a into branch_b
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git checkout branch_b
 							$ git merge branch_a
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Tag the current commit
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git tag my_tag
 						</p>
 					</div>
 					<div class="third_column">
 						<h2 id="make_header" class="column_header"><b>Make a change</b></h2>
-						<p class="t">
+						<p class="text_p">
 							Stages the file, ready for commit
 						</p>
-						<p class="c">
+						<p class="text_p">
 							$ git add [file]
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Stage all changed files to versioned history
 						</p>
-						<p class="c">
-							$ git commit -n "commit message"
+						<p class="code_p">
+							$ git commit -m "commit message"
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Commit all your tracked files to versioned history
 						</p>
-						<p class="c">
-							$ git commit -an "commit message"
+						<p class="code_p">
+							$ git commit -am "commit message"
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Unstages file, keeping the file changes
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git reset [file]
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Revert everything to the last Commit
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git reset --hard
 						</p>
 					</div>
 					<div class="fourth_column">
 						<h2 id="synchronize_header" class="column_header"><b>Synchronize</b></h2>
-						<p class="t">
+						<p class="text_p">
 							Get the latest changes from origin(no merge)
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git fetch
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Fetch the latest changes from origin and merge
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ fit pull
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Fetch the latest changes from origin and rebase
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git pull --rebase
 						</p>
 
-						<p class="t">
+						<p class="text_p">
 							Push local chamges to the origin
 						</p>
 						<p>
@@ -227,13 +227,13 @@
 						</p>
 
 						<h2 id="finally_header" class="column_header"><b>Finally!</b></h2>
-						<p class="t">
+						<p class="text_p">
 							When doubt, use git help
 						</p>
-						<p class="c">
+						<p class="code_p">
 							$ git command --help
 						</p>
-						<p class="t">
+						<p class="text_p">
 							Or visit <a href="https://github.com/">https://github.com/</a> for official GitHub training.
 						</p>
 					</div>

@@ -21,7 +21,9 @@ body {
 .d-flex {
     display: flex;
 }
-
+.justify_content_right {
+    justify-content: right;
+}
 .justify-content-space-between {
     justify-content: space-between;
 }
@@ -61,7 +63,7 @@ body {
     border-bottom-style: ridge;
     border-color: red;
     justify-content: space-between;
-    background-color: rgb(54, 123, 252);
+    background-color: blue;
 }
 
 #main {
@@ -69,7 +71,7 @@ body {
 }
 
 #footer {
-    color: #fff;
+    color: white;
     background-color: black;
     flex: 0 0 auto;
     text-align: center;
@@ -87,7 +89,7 @@ body {
 
 .container_main h3 {
     text-align: center;
-    background-color: rgb(54, 123, 252);
+    background-color: skyblue;
     padding: 0.4em;
 }
 
@@ -106,7 +108,8 @@ body {
 }
 
 .form {
-    border: 3px solid #f1f1f1;
+    border: 3px solid white;
+    border-radius: 5%;
     height: 630px;
     width: 500px;
     position: relative;
@@ -114,8 +117,8 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    margin: auto auto auto auto;
-    background-color: #2f80f8;
+    margin: 3px auto 3px auto;
+    background-color: cornflowerblue;
 }
 
 
@@ -126,12 +129,12 @@ input[type=password],
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     box-sizing: border-box;
 }
 
 button {
-    background-color: rgb(54, 123, 252);
+    background-color: blue;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -141,7 +144,7 @@ button {
 }
 
 .btn_enter {
-    background-color: #f44336;
+    background-color: tomato;
     color: black;
 }
 
@@ -153,7 +156,7 @@ button:hover {
     width: auto;
     padding: 10px 18px;
     margin-left: 3%;
-    background-color: #f44336;
+    background-color: tomato;
 }
 
 #container {
@@ -161,7 +164,8 @@ button:hover {
 }
 
 span.pswrd {
-    float: right;
+    display: inline-flex;
+    padding-left: 55%;
     padding-top: 16px;
 }
 
@@ -171,13 +175,13 @@ span.pswrd {
 }
 
 /* Commands */
-.t {
+.text_p {
     font-size: 14px;
     font-weight: 300;
     color: slategrey;
 }
 
-.c {
+.code_p {
     font-weight: 700;
     font-family: monospace;
 }
@@ -189,7 +193,7 @@ span.pswrd {
     margin-top: 30px;
     margin-left: 30px;
     margin-right: 30px;
-    margin-bottom: 30pxgi;
+    margin-bottom: 30px;
 }
 
 #create_header {
@@ -201,11 +205,11 @@ span.pswrd {
 }
 
 #work_header {
-    color: rgb(141, 209, 141);
+    color: greenyellow;
 }
 
 #make_header {
-    color: rgb(5, 117, 5);
+    color: green;
 }
 
 #synchronize_header {
