@@ -18,22 +18,20 @@ userInput.question('How many floors? ', (favNum) => {
         }
 
         //loop for spaces
-        for (let spaces = 0; spaces < floors-i; spaces++){
+        for (let spaces = 0; spaces < floors - i; spaces++){
             s += "  ";
         }
 
         //loop for second triangle
-        for (let A = 0; A < i+1+i; A++){
+        for (let A = 0; A < i + 1 + i; A++){
             s += "*";
         }
 
         //upper part of romb
         if (i < floors/2){
-
             for (let spaces = 0; spaces < floors - i; spaces++) {
                 s += "  ";
             }
-
             for (let X = 0; X < i + 1 + i; X++) {
                 s += "*";
             }
@@ -45,12 +43,11 @@ userInput.question('How many floors? ', (favNum) => {
             for (let spaces = 0; spaces < floors; spaces++) {
                 s += " ";
             }
-            for (let X = 0; X<(floors-i)+(floors-1-i); X++){
+            for (let X = 0; X < (floors - i) + (floors - 1 - i); X++){
                 s += "*";
             }
         }
         console.log(s);
     }
-
     userInput.close();
 });

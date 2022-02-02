@@ -7,5 +7,6 @@ while(numb >= 50){
 }
 
 let result = numb;
+
 console.log('result', result);
 console.log('counter', counter);

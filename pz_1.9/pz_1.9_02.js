@@ -8,6 +8,7 @@ do{
         description = " - це парне";
     else
         description = " - це непарне"
-    console.log(start+description);
+
+    console.log(start + description);
     start++;
-} while (start<=20)
+} while (start <= 20)
