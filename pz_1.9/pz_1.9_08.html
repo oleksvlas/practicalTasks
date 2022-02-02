@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button onclick="myFunction()">Check day</button>
+        <p id="day"></p>
+        <script>
+            function myFunction() {
+                let month = parseInt(prompt("Please enter day number", "1-7"));
+                let day;
+                switch (month){
+                    case 1:
+                        day = 'MONDAY';
+                        break;
+                    case 2:
+                        day = 'TUESDAY';
+                        break;
+                    case 3:
+                        day = 'WEDNESDAY';
+                        break;
+                    case 4:
+                        day = 'THURSDAY';
+                        break;
+                    case 5:
+                        day = 'FRIDAY';
+                        break;
+                    case 6:
+                        day = 'SATURDAY';
+                        break;
+                    case 7:
+                        day = 'SUNDAY';
+                        break;
+                    default:
+                        day = 'Enter a number in range 1-7'
+                }
+                document.getElementById("day").textContent = day;
+            }
+        </script>
+    </body>
+</html>
