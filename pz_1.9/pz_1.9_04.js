@@ -1,27 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-       Piramide();
-      Triagle(6);
-     Romb();
+
+Piramide();
+Triagle(6); 
+Romb();
 
 
 
-        // var triagle="*";
-      
-        // for(var i=0;i<6;i++){
-        //     var y="**";
-
-        //     console.log( triagle);
-        //     triagle+=y;
-        // }
+  
 
 function Piramide(){
     var x="*";
@@ -40,7 +24,6 @@ function Triagle(max){
 while (i < max) {
  var space ="";
  var  star ="";
- var triagle="*";
   for (j = 0; j < max - i; j++) space +=" ";
   for (j = 0; j < 2 * i + 1; j++) star +="*";
   console.log(space + star);
@@ -78,6 +61,4 @@ else if(x<7){
 console.log(" ");
 }   
 prompt()
-    </script>
-</body>
-</html>
+   
