@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button onclick="myFunction()">Check month</button>
+    <p id="demo"></p>
+<script>
+    function myFunction() {
+        let month = parseInt(prompt("Please month number", "1-12"));
+        if (month != null) {
+            let season;
+            let name;
+            switch(month){
+                case 1:
+                    name = 'January';
+                case 2:
+                    name = 'February';
+                case 12:
+                    name = 'December';
+                    season = 'WINTER';
+                    break;
+                case 3:
+                    name = 'March';
+                case 4:
+                    name = 'April';
+                case 5:
+                    name = 'May';
+                    season = 'SPRING';
+                    break;
+                case 6:
+                    name = 'June';
+                case 7:
+                    name = 'July';
+                case 8:
+                    name = 'August';
+                    season = 'SUMMER';
+                    break;
+                case 9:
+                    name = 'September';
+                case 10:
+                    name = 'October';
+                case 11:
+                    name = 'November';
+                    season = 'AUTUMN'
+                    break;
+                default:
+                    season = '';
+                    name = 'Enter number in range 1-12';
+            }
+            alert(name + " " + season);
+        }
+    }
+</script>
+
+</body>
+</html>
