@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    Piramide();
+       Triagle(9);
+    Romb();
+
+
+
+        // var triagle="*";
+      
+        // for(var i=0;i<6;i++){
+        //     var y="**";
+
+        //     console.log( triagle);
+        //     triagle+=y;
+        // }
+
+function Piramide(){
+    var x="*";
+        for(var i=0;i<6;i++){
+            var y="*";
+            console.log(x);
+            x+=y;
+        }
+        console.log(" ");
+}
+
+function Triagle(){
+    var i = 0;
+  var j = 0;
+  var max = 6; 
+while (i < max) {
+ var space ="";
+ var  star ="";
+ var triagle="*";
+  for (j = 0; j < max - i; j++) space +=" ";
+  for (j = 0; j < 2 * i + 1; j++) star +="*";
+  console.log(space + star);
+  i++;
+}
+console.log(" ");
+}
+
+function Romb(max){
+      var i = 0;
+      var x=0;
+     var j = 0;
+      var max = 6; 
+while (i < max) {
+    var space ="";
+    var  star ="";
+    if(x < 3){
+  for (j = 0; j < max - i; j++){ space +=" ";}
+  for (j = 0; j < 2 * i + 1; j++) {
+      star +="*";}
+  console.log(space + star);
+  i++;
+  x++; 
+}
+else if(x<7){
+    for (j = 0; j < max - i; j++){ space +=" ";}
+  for (j = 0; j < 2 * i + 1; j++){ star +="*";}
+  console.log(space + star);
+  i--;
+  x++;   
+  }
+  else
+     break; 
+}
+console.log(" ");
+}   
+    </script>
+</body>
+</html>
