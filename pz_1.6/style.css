@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+}
+
+:root {
+    display: flex;
+    /*flex-flow: column;*/
+    flex-direction: column;
+    align-content: space-between;
+}
+
+/*navigation*/
+nav {
+    background-color: navy;
+    color: cornsilk;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+}
+
+nav > ul > li {
+    display: inherit;
+    align-items: stretch;
+    margin-right: 1em;
+}
+
+nav > ul > .nav-right {
+    margin-left: auto;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: cornsilk;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+nav > ul > li > a > h2 {
+    color: yellow;
+}
+
+/* footer */
+
+footer {
+    background: linear-gradient(black, darkslategrey);
+    height: 5em;
+}
