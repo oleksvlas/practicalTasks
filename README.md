@@ -1,6 +1,6 @@
 # Завдання на практичне заняття 1.6
 
-### These are practical tasks for the 29th course
+### These are practical tasks for the 20th course
 
 ---
 
