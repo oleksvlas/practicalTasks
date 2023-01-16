@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.registration{
+    border: gray 2px solid;
+}
+
+.container {
+    margin: 50px 0;
+    display: flex;
+    justify-content:space-around;
+}
+
+.registration .title {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(38, 86, 158);
+}
+
+.registration .content{
+    margin: 75px 15px;
+}
+
+.input{
+    width: 400px;
+    height: 35px;
+    margin: 2px 0;
+}
+
+.row {
+    margin: 10px 0;
+}
+
+.btn {
+    text-align: right;
+    padding: 5px 20px 0 0;
+}
+
+.btn button{
+    height: 30px;
+}
