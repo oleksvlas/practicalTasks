@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:300i,wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="/pz_1.6/css/style.css">
+
+	<title>Pz1_6</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="headerinner">
+					<div class="headerlogo">
+						<h1 id="head">
+							Мій особистий блог
+						</h1>
+						<h2 class="header-name">
+							Анохін Дмитро
+						</h2>
+					</div>
+
+					<nav class="nav">
+						<a href="/html/login.html" class="navlink">Вхід</a>
+						<a href="#" class="navlink">Реєстрація</a>
+					</nav>
+				</div>
+			</div>
+		</header>		
+	<main>
+		<div class="command">
+			<div class="container">
+				<div class="row">
+					<div class="first-colmn">
+						<h2 id="create-header" class="colmn-header" ><b>Create a Repository</b></h2>
+						<p class="text">
+							From scratch -- Create a new local repository
+						</p>
+						<p class="code">
+							$ git init [project name]
+						</p>
+
+						<p class="text">
+							Download from an existing repository
+						</p>
+						<p class="code">
+							$ git clone my_url
+						</p>
+
+						<h2 id="observe-header" class="colmn-header"><b>Observe your Repository</b></h2>
+						<p class="text">
+							List ne or modified files not yet commited
+						</p>
+						<p class="code">
+							$ git status
+						</p>
+
+						<p class="text">
+							Show the changes to files not yet staged
+						</p>
+						<p class="code">
+							$ git diff
+						</p>
+
+						<p class="text">
+							Show the changes to staged files
+						</p>
+						<p class="code">
+							$ git diff --cached
+						</p>
+
+						<p class="text">
+							Show all staged and unstaged file changes
+						</p>
+						<p class="code">
+							$ git diff HEAD
+						</p>
+
+						<p class="text">
+							Show the changes between two commit, ids
+						</p>
+						<p class="code">
+							$ git diff comit1 comit2
+						</p>
+
+						<p class="text">
+							List the change dates and authors for a file
+						</p>
+						<p class="code">
+							$ git blame [file]
+						</p>
+
+						<p class="text">
+							Show the file changes for a commit id and/or file
+						</p>
+						<p class="code">
+							$ git show [commit]:[file] 
+						</p>
+
+						<p class="text">
+							Show full change history
+						</p>
+						<p class="code">
+							$ git log
+						</p>
+
+						<p class="text">
+							Show change history for file/directory including diffs
+						</p>
+						<p class="code">
+							$ git log -p [file/directory]
+						</p>
+					</div>
+					<div class="second-colmn">
+						<h2 id="working-header" class="colmn-header">Working with Branches</h2>
+						<p class="text">
+							List local branches
+						</p>
+						<p class="code">
+							$ git branch
+						</p>
+
+						<p class="text">
+							List all branches, local and remote
+						</p>
+						<p class="code">
+							$ git branch -av
+						</p>
+
+						<p class="text">
+							Switch to a branch, my_branch, and update working directory
+						</p>
+						<p class="code">
+							$ git checkout my_branch
+						</p>
+
+						<p class="text">
+							Create a new branch called new_branch
+						</p>
+						<p class="code">
+							$ git branch new_branch
+						</p>
+
+						<p class="text">
+							Delete the branch called my_branch
+						</p>
+						<p class="code">
+							$ git branch -d my_branch
+						</p>
+
+						<p class="text">
+							Merge branch_a into branch_b
+						</p>
+						<p class="code">
+							$ git checkout branch_b
+							$ git merge branch_a
+						</p>
+
+						<p class="text">
+							Tag the current commit
+						</p>
+						<p class="code">
+							$ git tag my_tag
+						</p>
+					</div>
+					<div class="third-colmn">
+						<h2 id="make-header" class="colmn-header"><b>Make a change</b></h2>
+						<p class="text">
+							Stages the file, ready for commit
+						</p>
+						<p class="code">
+							$ git add [file]
+						</p>
+
+						<p class="text">
+							Stage all changed files to versioned history
+						</p>
+						<p class="code">
+							$ git commit -n "commit message"
+						</p>
+
+						<p class="text">
+							Commit all your tracked files to versioned history
+						</p>
+						<p class="code">
+							$ git commit -an "commit message"
+						</p>
+
+						<p class="text">
+							Unstages file, keeping the file changes
+						</p>
+						<p class="code">
+							$ git reset [file]
+						</p>
+
+						<p class="text">
+							Revert everything to the last Commit
+						</p>
+						<p class="code">
+							$ git reset --hard
+						</p>
+					</div>
+					<div class="fouthd-comln">
+						<h2 id="synchronize-header" class="colmn-header"><b>Synchronize</b></h2>
+						<p class="text">
+							Get the latest changes from origin(no merge)
+						</p>
+						<p class="code">
+							$ git fetch
+						</p>
+
+						<p class="text">
+							Fetch the latest changes from origin and merge
+						</p>
+						<p class="code">
+							$ fit pull
+						</p>
+
+						<p class="text">
+							Fetch the latest changes from origin and rebase
+						</p>
+						<p class="code">
+							$ git pull --rebase
+						</p>
+
+						<p class="text">
+							Push local chamges to the origin
+						</p>
+						<p>
+							$ git push
+						</p>
+
+						<h2 id="finally-header" class="colmn-header"><b>Finally!</b></h2>
+						<p class="text">
+							When doubt, use git help
+						</p>
+						<p class="code">
+							$ git command --help
+						</p>
+						<p class="text">
+							Or visit <a href="https://github.com/">https://github.com/</a> for official GitHub training.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>		
+	<footer class="footer">
+		<div class="container">
+			<div class="bottom-text">
+				<p>&copy Всі права захищені.</p>
+				<p>Розробник: курсант 291 навчальної групи молодший сержант Анохін Д.Л.</p>
+			</div>
+		</div>
+	</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:300i,wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="/pz_1.6/css/style.css">
+	<title>Pz1_6</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="headerinner">
+					<div class="headerlogo">
+						<h1 id="head">
+							Мій особистий блог
+						</h1>
+						<h2 class="header-name">
+							Анохін Дмитро
+						</h2>
+					</div>
+
+					<nav class="nav">
+						<a href="/html/login.html" class="navlink">Вхід</a>
+						<a href="#" class="navlink">Реєстрація</a>
+					</nav>
+				</div>
+			</div>
+		</header>		
+	<main>
+		<div class="authorization">
+			<form class="form" action="action_page.php">
+				<div id="container">
+				  <label for="surname"><b>Прізвище</b></label>
+				  <input type="text" placeholder="Введіть Прізвище" name="surname" required>
+					
+					<label for="name"><b>Ім'я</b></label>
+					<input type="text" placeholder="Введіть Ім'я" name="name" required>
+
+					<label for="login"><b>Логін</b></label>
+					<input type="text" placeholder="Введіть логін" name="login" required>
+
+					<label for="study-group"><b>Навчальна група</b></label>
+					<select name="study-group" id="study-group">
+						<option value="291"><b>291</b></option>
+						<option value="292"><b>292</b></option>
+						<option value="293"><b>293</b></option>
+					</select>
+
+				  <label for="psw"><b>Пароль</b></label>
+				  <input type="password" placeholder="Ввкедіть пароль" name="psw" required>
+					
+					<label for="confpsw"><b>Підтвердження пароля</b></label>
+					<input type="password" placeholder="Введіть пароль" name="confpws" required> 
+
+				  <button type="submit">Вхід</button>
+				  <label>
+					 <input type="checkbox" checked="checked" name="remember"> Запам'ятати мене
+				  </label>
+				</div>
+			 
+				<div class="container" style="background-color:#f1f1f1">
+				  <button type="button" class="cancelbtn" ><a class="button-href" href="#">Відміна</a></button>
+				  <span class="psw">Забули 	<a href="#">пароль?</a></span>
+				</div>
+			</form>
+		</div>
+	</main>		
+	<footer class="footer">
+		<div class="container">
+			<div class="bottom-text">
+				<p>&copy Всі права захищені.</p>
+				<p>Розробник: курсант 291 навчальної групи молодший сержант Анохін Д.Л.</p>
+			</div>
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
