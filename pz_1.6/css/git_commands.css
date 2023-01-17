@@ -1,0 +1,58 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.block-command{
+    margin: 10px 0;
+    color: gray;
+}
+
+.block-command .command{
+    color: black;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+a{
+    color: blue;
+}
+
+main{
+    height: 100%;
+}
+
+.light-blue{
+    color: aqua;
+}
+
+.blue{
+    color: blue;
+}
+
+.light-green{
+    color: chartreuse;
+}
+
+.green{
+    color: green;
+}
+
+.light-red{
+    color: #f33c3c;
+}
+
+.red{
+    color: red;
+}
+
