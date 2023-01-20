@@ -1,0 +1,98 @@
+/* LOGIN */
+.wrapper{
+    display: grid;
+    min-height: 100vh;
+    grid-template: minmax(70px, auto) 1fr minmax(70px, auto) / 1fr;
+}
+.my-blog-text{
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: cornflowerblue;
+    font-family: Calibri, fantasy;
+    box-shadow: 0px 2px red;
+}
+.header h1{
+    margin: 0 0 0 10px;
+}
+.header p{
+    margin: 0 0 0 30px;
+    font-size: large;
+    color: white;
+}
+.login{
+    align-self: center;
+    padding-right: 10px;
+}
+.login a{
+    color: black;
+    text-decoration: none;
+    font-family: Calibri, fantasy;
+    font-weight: bold;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    background-color: darkslateblue;
+}
+main{
+    padding: 20px;
+}
+*{
+    margin: 0;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    display: grid;
+    grid-template: 1fr / 270px 270px 270px 270px;
+    padding: 0 50px 0 50px;
+}
+.l2{
+   margin-left: 10px;
+}
+.l3{
+    margin-left: 10px;
+}
+.l4{
+    margin-left: 10px;
+}
+.t1{
+    color: cornflowerblue;
+}
+.t2{
+    color: dodgerblue;
+    margin-top: 10px;
+}
+.t3{
+    color: greenyellow;
+}
+.t4{
+    color: green;
+}
+.t5{
+    color: orangered;
+}
+.t6{
+    color: brown;
+    margin-top: 10px;
+}
+.simple_text{
+    color: gray;
+    margin-top: 10px;
+}
+.simple_text a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+.command_text{
+    font-weight: bold;
+}
