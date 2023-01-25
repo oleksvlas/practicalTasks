@@ -1,0 +1,46 @@
+.header{
+    background: #1E90FF;
+    border-bottom: 2px solid red;
+    display: flex;
+    flex-direction: row;
+}
+.title1{
+    color:black;
+    margin: 0 20px;
+    padding: 5px 0 0 0;
+    font-weight : bolder;
+
+
+}
+.title2{
+    color:white;
+    margin: 0 40px 0;
+    font-size: 15px;
+    padding: 0 0 5px 0;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
+
+}
+.button1{
+    color:black;
+    padding-bottom: 0;
+    padding-right: 30px;
+    font-weight : bolder;
+}
+
+.button1, .button2 {
+    text-decoration: none;
+}
+
+.button2{
+    color:black;
+
+    padding-top: 0;
+    font-weight : bolder;
+}
+
