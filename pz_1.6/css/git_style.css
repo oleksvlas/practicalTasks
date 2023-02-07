@@ -1,0 +1,39 @@
+.container-git
+{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-git
+{
+    width: 290px;
+    padding-bottom: 20px;
+}
+
+.header-git
+{
+    text-align: left;
+}
+
+.some-description-command
+{
+    color: grey;
+}
+
+.full-menu-git
+{
+    display: block;
+    padding-left: 50px;
+}
+
+.command
+{
+    padding-bottom: 15px;
+}
+
+.decorate-sorce
+{
+    text-decoration: none;
+}
+
