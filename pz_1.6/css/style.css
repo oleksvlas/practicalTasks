@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.first_block{
+    padding-top: 20px;
+    margin-bottom: auto;
+}
+.book_img{
+    height: 150px;
+    width: 100px;
+    margin: 20px 20px 20px;
+}
+.book{
+    display: flex;
+    flex-direction: row;
+}
+.book_info{
+    margin: 20px 20px 0 0;
+
+}
+p{
+    text-indent: 30px;
+    font-size: 11.5px;
+    margin-top: 10px;
+}
+.more_info{
+    color: blue;
+    font-size: 11.5px;
+    text-decoration: none;
+    position:absolute;
+    right: 40px;
+}
+
