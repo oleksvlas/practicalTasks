@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Git Commands</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/git_commands.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+</head>
+<body>
+<div class="header">
+    <div class="titles">
+        <h2 class="title1">Мій особистий блог</h2>
+        <h3 class="title2">Ольга Турчак</h3>
+    </div>
+    <div class="buttons">
+        <a href="login.html" class="button1">Вхід</a>
+        <a href="register.html" class="button2">Реєстрація</a>
+    </div>
+</div>
+<div class="main_block">
+    <div class="git_command_gr">
+        <h2 class="com_gr1">Create a repository</h2>
+        <div class="command_unit">
+            <div class="com_descr">From scratch - Create a new local repository</div>
+            <div class="command">$ git init [project name]</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Download from an existing repository</div>
+            <div class="command">$ git clone my_url</div>
+        </div>
+    </div>
+    <div class="git_command_gr">
+        <h2 class="com_gr2">Observe your Repository</h2>
+        <div class="command_unit">
+            <div class="com_descr">List new or modified files yet committed</div>
+            <div class="command">$ git status</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Show the changes to files not yet staged</div>
+            <div class="command">$ git diff</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Show the changes to staged files</div>
+            <div class="command">$ git diff --cached</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Show all staged and unstaged file changes</div>
+            <div class="command">$ git diff HEAD</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Show the changes between two commits</div>
+            <div class="command">$ git diff commit1 commit2</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">List the charge dates and authors for a file</div>
+            <div class="command">$ git blame [file]</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Show the file changes for a commit id and/or file</div>
+            <div class="command">$ git show [commit] : [file]</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Show full change history</div>
+            <div class="command">$ git log</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Show change history for file/directory including diffs</div>
+            <div class="command">$ git log -p [file/directory]</div>
+        </div>
+    </div>
+    <div class="git_command_gr">
+        <h2 class="com_gr3">Working with branches</h2>
+        <div class="command_unit">
+            <div class="com_descr">List a local branches</div>
+            <div class="command">$git branch</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">List all branches, local and remote</div>
+            <div class="command">$git branch -av</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Switch to a branch, my branch and update working directory</div>
+            <div class="command">$git checkout my_branch</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Create a new branch called new_branch</div>
+            <div class="command">$git branch new_branch</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Delete the branch called my_branch</div>
+            <div class="command">$git branch -d my_branch</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Merge branch_a into branch_b</div>
+            <div class="command">$git checkout branch_b <br>$git merge branch_a</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Tag the current commit</div>
+            <div class="command">$git tag my_tag</div>
+        </div>
+    </div>
+    <div class="git_command_gr">
+        <h2 class="com_gr4">Make a change</h2>
+        <div class="command_unit">
+            <div class="com_descr">Stages the file, ready for commit</div>
+            <div class="command">$git add [file]</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Stage all changed files, ready for commit</div>
+            <div class="command">$git add .</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Commit all staged files to versioned history</div>
+            <div class="command">$git commit -m "commit message"</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Commit all your tracked files to versioned history</div>
+            <div class="command">$git commit -an "commit message"</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Unstages file, keeping the file changes</div>
+            <div class="command">$git reset [file]</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Revert everything to the last commit</div>
+            <div class="command">$git reset --hard</div>
+        </div>
+
+    </div>
+    <div class="git_command_gr">
+        <h2 class="com_gr5">Synchronize</h2>
+        <div class="command_unit">
+            <div class="com_descr">Get the latest changes from origin(no merge)</div>
+            <div class="command">$git pull</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Get the latest changes from origin and merge</div>
+            <div class="command">$git pull</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Fetch the latest changes from origin and rebase</div>
+            <div class="command">$git pull --rebase</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Push local changes to the origin</div>
+            <div class="command">$git push</div>
+        </div>
+    </div>
+    <div class="git_command_gr">
+        <h2 class="com_gr6">Finally!</h2>
+        <div class="command_unit">
+            <div class="com_descr">When in doubt, use git help</div>
+            <div class="command">$git command --help</div>
+        </div>
+        <div class="command_unit">
+            <div class="com_descr">Or visit <a href="">https://training.github.com/</a> for official GitHub training</div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<footer class="footer">
+    <div class="footer_info">
+        <div class="first_foot">
+            Всі права захищені
+        </div>
+        <div>
+            Розробник: курсантка 201 навчальної групи Турчак О.Р.
+        </div>
+    </div>
+</footer>

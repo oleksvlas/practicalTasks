@@ -1,0 +1,46 @@
+.main_block{
+    column-count: 4;
+    text-align: justify;
+    margin: 10px 0 10px 100px;
+
+}
+.com_gr1{
+    color: deepskyblue;
+    margin-bottom: 10px;
+}
+.com_gr2{
+    color: #1E90FF;
+    margin-bottom: 10px;
+
+}
+.com_gr3{
+    color: yellowgreen;
+    margin-bottom: 10px;
+
+}
+.com_gr4{
+    color: olivedrab;
+    margin-bottom: 10px;
+
+}
+.com_gr5{
+    color: orangered;
+    margin-bottom: 10px;
+
+}
+.com_gr6{
+    color: brown;
+    margin-bottom: 10px;
+
+}
+.git_command_gr{
+    margin-bottom: 20px;
+    width: 80%;
+}
+.command_unit{
+    margin-bottom: 20px;
+}
+.command{
+    font-weight: bold;
+    margin-top: 5px;
+}
