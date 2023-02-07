@@ -1,0 +1,56 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.registr_block{
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 300px;
+    margin:20px auto;
+
+
+}
+.reg_hat{
+    padding: 0;
+    margin-bottom: 0;
+    background: #1E90FF;
+    color:aliceblue;
+    height: 30px;
+    width: 100%;
+}
+div.reg_hat div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    margin: 12px;
+}
+
+.forms_block {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.register_input {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    flex-flow: column;
+
+}
+
+
+.login_button {
+    display: flex;
+    margin-left: auto
+}
