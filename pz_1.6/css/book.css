@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    margin-right: 5px;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    background-color: #F8F8F8;
+
+}
+.gor_lines{
+    background-color: #0000CD;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 7px;
+}
+.book_img{
+    height: 200px;
+    width: 150px;
+    margin: 20px 20px 20px;
+    border: 3px solid brown;
+}
+.first_block{
+    display: flex;
+    flex-direction: row;
+
+
+}
+.book_info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+
+}
+.first_description{
+    margin-left: auto;
+    margin-right: 10px;
+    text-align: right;
+    width:25%;
+}
+.left_descr{
+    margin: 8px 0 0 0;
+    color: forestgreen;
+    text-decoration: underline;
+    text-align: right;
+}
+.atribut{
+    font-weight: bold;
+    font-size: 24px;
+
+}
+.value_link, .value{
+    font-weight: normal;
+    font-size: 24px;
+}
+.value_link{
+    text-decoration: underline;
+    color: #0000CD;
+}
+.second_block{
+    display: flex;
+    flex-direction: row;
+
+}
+.author_info{
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    width: 90%;
+
+}
+.book_description{
+    text-indent: 30px;
+    margin: 20px;
+    width: 100%;
+    font-size: 15px;
+
+}
+.third_block{
+    display: flex;
+    flex-direction: row;
+}
+.author_description{
+    text-indent: 30px;
+    width: 100%;
+    font-size: 15px;
+}
+.surname{
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: underline;
+    color: #0000CD;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.jears_of_life{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.zmist{
+    margin: 10px 0 0 40px;
+    font-weight: 100;
+
+}
+.zmist_text{
+    color: indianred;
+    text-decoration: underline;
+    font-size: 20px;
+}
+.rozdils{
+    font-size: 20px;
+    color: #0000CD;
+}
+.roz1, .roz2{
+    text-decoration: underline;
+}
+li{
+    list-style: none;
+}
+
