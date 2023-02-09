@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #364a5a;
+    border-bottom: 3px solid #4205f9;
+    background: linear-gradient(#9c64e6, #6c6060);
+}
+
+.logo_text {
+    padding: 5px 10px;
+    margin-left: 30px;
+}
+
+.logo_text h3 {
+    text-indent: 35px;
+    color: #ffffff;
+}
+
+.auth a {
+    color: black;
+    padding: 10px;
+    line-height: 70px;
+    font-size: 20px;
+}
+
+.section_book {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: tomato;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.long {
+    margin: 330px 0;
+}
+
+.fast h3 {
+    background-color: #c2431c;
+    text-align: center;
+    color: #bdbdbd
+}
+
+.helth {
+    height: 200px;
+    width: 400px;
+    background: linear-gradient(#64bde6, #6c6060);
+    border: 2px solid red;
+}
+
+.eryp {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(58, 81, 81);
+    border: 2px #0d1013;
+    padding: 25px 10px;
+}
+
+.moth {
+    padding: 25px 10px;
+    margin-left: 700px;
+    font-size: large;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer {
+    margin: 345px 0;
+}
