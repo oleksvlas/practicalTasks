@@ -1,17 +1,25 @@
-var slash = '# ';
-var space = '@ ';
-var result = '';
-var row = true;
-for (var i = 0; i < 8; i++) {
-    for (var j = 0; j < 8; j++) {
-        if ((j+row) % 2 == 0) {
-            result += space;
-        } else {
-            result += slash;
+function chess(rows, columns) {
+    let arr_EN = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+    let newArr_EN = []
+    let slash = '# ';
+    let space = '@ ';
+    let result = '';
+    let row = true;
+    for (var i = 0; i < rows; i++) {
+        for (var j = 0; j < columns; j++) {
+            if ((j + row) % 2 == 0) {
+                result += space;
+            } else {
+                result += slash;
+            }
         }
+        console.log(rows - i + " " + result);
+        result = '';
+        row = !row;
     }
-    console.log(8-i + " " + result);
-    result='';
-    row = ! row;
+    for (let i = 0; i < columns; i++) {
+        newArr_EN += arr_EN[i]+" "
+    }
+    console.log("  " + newArr_EN)
 }
-console.log("  A B C D E F G H")
+chess(8,8)
