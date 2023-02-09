@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="pz_1.9_04.css" />
+    <!-- <script src="pz_1.9.js"></script> -->
+  </head>
+
+  <body>
+    <div>
+      <br />
+      <div class="name">
+        <script>
+          let a = "";
+          let height = 5;
+          for (let i = 0; i < height; i++) {
+            a = a + "*";
+            document.write(a + "</br>");
+          }
+        </script>
+      </div>
+
+      <hr />
+
+      <div class="name2">
+        <script>
+          let h = 4;
+          for (let i = -h; i <= h; i++) {
+            let line = "";
+            for (let j = -h; j <= h; j++) {
+              if (Math.abs(i) + Math.abs(j) <= h && (i + j) % 2 != 0) {
+                line += "*";
+              } else {
+                line += " ";
+              }
+            }
+            document.write(line + "</br>");
+          }
+        </script>
+      </div>
+
+      <hr />
+
+      <div class="name3">
+        <script>
+          //const month = prompt("Введіть кількість етажів піраміди ");
+          for (let i = 0; i <= 5; i++) {
+            for (let j = 0; j < i; j++) {
+              document.write("*");
+            }
+            document.write("<br/>");
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
