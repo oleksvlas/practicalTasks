@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git commands</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo_text">
+          <h1>Мій особистий блог</h1>
+           <h3>Олексій Шевченко</h3>
+        </div>
+        <div class="sign_in">
+           <a href="#">Вхід</a>
+           <a href="#">Регістрація</a>
+        </div>
+    </div>
+    
+    <div class="info">
+        <div class="create_a_repos">
+            <h4 class="head_menu" style="color: aqua;">
+                Create a Repository
+            </h4>
+            <div class="text">
+                From scratch -- Create a new local repository
+            </div>
+            <h4 class="command">
+                $ git init [project name]
+            </h4>
+            <div class="text">
+                Download from an existing repository
+            </div>
+            <h4 class="command">
+                $ git clone my_url
+            </h4>
+        </div>
+
+        <div class="observ_u_repos">
+            <h4 class="head_menu" style="color: blue;">
+                Observer your repository
+            </h4>
+            <div class="text">
+                List new or modified files not yet commited
+            </div>
+            <h4 class="command">
+                $ git status
+            </h4>
+            <div class="text">
+                Show the changes to files not yet staged
+            </div>
+            <h4 class="command">
+                $ git diff
+            </h4>
+            <div class="text">
+                Show the changes to staged files
+            </div>
+            <h4 class="command">
+                $ git diff --cached
+            </h4>
+            <div class="text">
+                Show all staged and unstaged file changes
+            </div>
+            <h4 class="command">
+                $ git diff HEAD
+            </h4>
+            <div class="text">
+                Show the changes between two commit ids
+            </div>
+            <h4 class="command">
+                $ git diff commit1 commit2
+            </h4>
+            <div class="text">
+                List the changes dates and authors for a file
+            </div>
+            <h4 class="command">
+                $ git blame [file]
+            </h4>
+            <div class="text">
+                Show the file changes for a commit id and/or file
+            </div>
+            <h4 class="command">
+                $ git show [commit]:[file]
+            </h4>
+            <div class="text">
+                Show full change history
+            </div>
+            <h4 class="command">
+                $ git log
+            </h4>
+            <div class="text">
+                Show change history for file/directory including diffs
+            </div>
+            <h4 class="command">
+                $ git log -p [file/directory]
+            </h4>
+        </div>
+
+        <div class="working_wth_brnch">
+            <h4 class="head_menu" style="color: greenyellow;">
+                Working with Branches 
+            </h4>
+            <div class="text">
+                List all local branches
+            </div>
+            <h4 class="command">
+                $ git branch
+            </h4>
+            <div class="text">
+                List all branches, local and remote 
+            </div>
+            <h4 class="command">
+                $ git branch -av
+            </h4>
+            <div class="text">
+                Show to a branch, my branch and update working directory  
+            </div>
+            <h4 class="command">
+                $ git checkout my_branch
+            </h4>
+            <div class="text">
+                Create a new branch called new_branch 
+            </div>
+            <h4 class="command">
+                $ git branch new_branch
+            </h4>
+            <div class="text">
+                Delete the branch called my_branch
+            </div>
+            <h4 class="command">
+                $ git branch -d my_branch
+            </h4>
+            <div class="text">
+                Merge branch_a into branch_b
+            </div>
+            <h4 class="command">
+                $ git checkeout branch_b
+                <p>$ git merge branch_a</p>
+            </h4>
+            <div class="text">
+                Tag the current commit
+            </div>
+            <h4 class="command">
+                $ git tag my_tag
+            </h4>
+        </div>
+        
+        <div class="make_a_chng">
+            <h4 class="head_menu" style="color: green;">
+                Make a change
+            </h4>
+            <div class="text">
+                Stages the file, ready for commit
+            </div>
+            <h4 class="command">
+                $ git add [file]
+            </h4>
+            <div class="text">
+                Stage all changed files, ready for commit
+            </div>
+            <h4 class="command">
+                $ git add
+            </h4>
+            <div class="text">
+                Commit all staged files to versioned history
+            </div>
+            <h4 class="command">
+                $ git commit -m "commit message"
+            </h4>
+            <div class="text">
+                Commit all your tracked files tp versioned history
+            </div>
+            <h4 class="command">
+                $ git commit -am "commit message"
+            </h4>
+            <div class="text">
+                Unstages file, keeping the file changes
+            </div>
+            <h4 class="command">
+                $ git reset [file]
+            </h4>
+            <div class="text">
+                Revert everything to the last commit
+            </div>
+            <h4 class="command">
+                $ git reset --hard
+            </h4>
+        </div>
+
+        <div class="synch">
+            <h4 class="head_menu" style="color: #ff2400;">
+                Synchronize
+            </h4>
+            <div  class="text">
+                Get the latest changes from origin (no merge)
+            </div>
+            <h4 class="command">
+                $ git fetch
+            </h4>
+            <div class="text">
+                Fetch the latest changes from origin and merge
+            </div>
+            <h4 class="command">
+                $ git pull
+            </h4>
+            <div class="text">
+                Fetch the latest changes from origin and rebase
+            </div>
+            <h4 class="command">
+                $ git pull --rebase
+            </h4>
+            <div class="text">
+                Push local changes to the origin
+            </div>
+            <h4 class="command">
+                git push
+            </h4>
+        </div>
+
+        <div class="finally">
+            <h4 class="head_menu" style="color: #8B0000">
+                Finally!            
+            </h4>
+            <div class="text">
+                When doubt, use git help
+            </div>
+            <h4 class="command">
+                $ git command --help
+            </h4>
+            <p></p>
+            <div class="text">
+                Or visit <a href="#">https://training.github.com/</a>
+                <p>for official GitHub training</p>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="footer">
+        <div class="footer_text">
+           <p>&copy;Всі права захищені.</p>
+           <p>Розробник: курсант 203 навчальної групи Шевченко О.В.</p>
+        </div>
+    </div>
+     
+
+</body>
+</html>

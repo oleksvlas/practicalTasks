@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    font-family: Verdana,sans-serif;
+    box-sizing: border-box;
+}
+.header{
+   display: flex;
+   justify-content: space-between;
+   background-color: goldenrod;
+   border-bottom: 3px solid blue;
+   padding: 0;
+}
+.logo_text{
+    margin-left: 40px;
+    padding: 1px;
+    font-size: small;
+}
+.logo_text h3{
+    text-indent: 60px;
+    color: wheat;
+    margin: 0;
+}
+.sign_in{
+    font-size: 15px;
+    line-height: 100px;
+    padding: 1px;
+}
+.sign_in a{
+    padding: 10px;
+    color: green;
+}
+.register{
+    border: 3px solid blue;
+    height: 270px;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 13px;
+    padding-bottom: 200px;
+}
+.reg2{
+    text-align: center;
+    font-size: 10px;
+    background-color: aqua;
+    padding: 5px;
+    border-bottom: 3px solid blue;
+}
+.lastname input{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 350px;
+   font-size: 20px;
+}
+.lastname p{
+    margin: 5px;
+    margin-left: 22px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.name input{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 350px;
+   font-size: 20px;
+}
+.name p{
+    margin: 5px;
+    margin-left: 22px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.login input{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 350px;
+   font-size: 20px;
+}
+.login p{
+    margin: 5px;
+    margin-left: 22px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.select_group h3{
+    margin: 5px;
+    margin-left: 22px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.select_group select{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    font-size: 12px;
+}
+.password p{
+    margin: 5px;
+    margin-left: 22px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.password input{
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 350px;
+   font-size: 20px;
+}
+.confirm_pass p{
+    margin: 5px;
+    margin-left: 22px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.confirm_pass input{
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 350px;
+   font-size: 20px;
+}
+.submit{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    
+}
+.footer{
+    display: flex;
+    margin-top: 300px;
+    background-color: black;
+    text-align: center;
+    color: gray;
+    padding: 20px;
+    
+}
+.footer_text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    
+}
+
+.head_menu{
+    font-size: 15px;
+    margin: 5px;
+}
+.info{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.observ_u_repos{
+    height: 0.05px;
+}
+.text{
+    color: grey;
+    font-size: 9px;
+    margin-left: 6px;
+}
+.command{
+    font-size: 10px;
+    margin-left: 6px;
+}
+.working_wth_brnch{
+    display: block;
+    text-align: start;
+    margin-left: 400px;
+    margin-top: -129px;
+}
+.make_a_chng{
+    display: block;
+    text-align: start;
+    margin-left: 800px;
+    margin-top: -398px;
+}
+.synch{
+    display: block;
+    margin-left: 1100px;
+    margin-top: -323px;
+}
+.finally{
+    display: block;
+    margin-left: 1100px;
+}
