@@ -1,0 +1,106 @@
+header
+{
+    display: block;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: rgb(0, 138, 202);
+    border-bottom: 2px solid;
+    border-color: red;
+}
+
+.blog
+{
+    display: block;
+    text-align: center;
+}   
+
+.text_blog
+{
+ align-items: center;
+}
+
+.my-blog
+{
+    color: black;
+    padding-bottom: 2px;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.name-blog
+{
+ color: white;
+}
+
+.more
+{
+ text-align: right;
+ color: blue;
+}
+
+.about_book
+{
+ padding-left: 15px;
+}
+
+.reg-log
+{
+    align-self: center;
+    display: flex;
+    block-size: auto;
+    padding-right: 5px;
+}
+
+.register
+{
+    padding-left: 5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.some_text
+{
+ display: flex;
+ margin-top: 15px;
+ border-top: 1px solid;
+ border-bottom: 1px solid;
+ border-color: grey;
+ padding: 15px;
+}
+
+.book_img
+{
+ height: 300px;
+ width: 200px;
+}
+
+footer
+{
+width: 100%;
+height: 100px;
+position:fixed;
+bottom: 0;
+flex:content;
+background-color: rgb(40, 38, 44);
+}
+
+.role
+{
+ background-color: rgb(40, 38, 44);
+ text-align: center;
+ padding-top: 20px;
+ color: white;
+}
+
+
+.source-log
+{
+    text-decoration: none;
+}
