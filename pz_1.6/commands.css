@@ -66,3 +66,14 @@ main{
     font-weight: 700;
     color: dodgerblue;
 }
+
+.footer{
+    height: 95px;
+    background-color: #263238;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
