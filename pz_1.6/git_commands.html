@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Commands</title>
+    <link href="commands.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header__inner">
+            <div class="head">
+                <div class="my_blog">Мій особистий блог</div>
+                <div class="name">Богдан Палюх</div>
+            </div>
+            <div class="management">
+                <a class="enter" href="#">Вхід</a>
+                <a class="registr" href="#">Реєстрація</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="column">
+            <p class="col_head" style="color: cornflowerblue">Create a Repository</p>
+
+            <p class="command_desc">From scratch -- Create a new local</br> repository</p>
+            <p class="git_command">$ git init [project name]</p>
+
+            <p class="command_desc">Download from an existing repository</p>
+            <p class="git_command">$ git clone my_url</p>
+
+            <p class="col_head" style="color: royalblue">Observe your Repository</p>
+
+            <p class="command_desc">List new or modified files not yet </br> committed</p>
+            <p class="git_command">$ git status</p>
+
+            <p class="command_desc">Show the changes to files not yet started</p>
+            <p class="git_command">$ git diff</p>
+
+            <p class="command_desc">Show the changes to staged files</p>
+            <p class="git_command">$ git diff --cached</p>
+
+            <p class="command_desc">Show all staged and unstaged <br> file changes </p>
+            <p class="git_command">$ git diff HEAD</p>
+
+            <p class="command_desc">Show the changes between two</br> commit ids</p>
+            <p class="git_command">$ git diff commit1 commit2</p>
+
+            <p class="command_desc">List the change dates and authors</br>for a file</p>
+            <p class="git_command">$ git blame [file]</p>
+
+            <p class="command_desc">Show the file changes for a commit</br>id and/or file</p>
+            <p class="git_command">$ git show [commit]:[file]</p>
+
+            <p class="command_desc">Show full change history</p>
+            <p class="git_command">$ git log</p>
+
+            <p class="command_desc">Show change history for file/directory</br>including diffs</p>
+            <p class="git_command">$ git log -p [file/directory]</p>
+
+        </div>
+        <div class="column">
+            <p class="col_head" style="color: limegreen">Working with Branches</p>
+        </div>
+        <div class="column">
+            <p class="col_head" style="color: green">Make a change</p>
+        </div>
+        <div class="column">
+            <p class="col_head" style="color: orange">Synchronize</p>
+            <p class="col_head" style="color: orangered">Finally!</p>
+        </div>
+    </main>
+</body>
+</html>
