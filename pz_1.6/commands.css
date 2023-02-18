@@ -61,3 +61,8 @@ main{
     font-weight: 700;
     font-size: 14px;
 }
+.visit a{
+    text-decoration: none;
+    font-weight: 700;
+    color: dodgerblue;
+}
