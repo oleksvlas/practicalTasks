@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.header__inner{
+    background-color: dodgerblue;
+    padding: 5px 10px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid red;
+}
+.my_blog{
+    font-size: 22px;
+    font-weight: 700;
+}
+.name{
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+.management{
+    display: flex;
+    align-items: center;
+}
+.management a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.enter{
+    margin-right: 15px;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.main_inner{
+    margin-top: 20px;
+    height: 500px;
+    width: 360px;
+    border: solid 3px lightgrey;
+}
+.main_head{
+    color: white;
+    text-align: center;
+    background-color: dodgerblue;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 0 12px 0;
+}
+.main_inputs{
+    margin: 5px 10px 5px 10px;
+    font-size: 14px;
+}
+.main_inputs input,select{
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border-color: lightgrey;
+    border-style: solid;
+}
+.main_inputs p{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.main_inputs span{
+    display: block;
+    font-size: 16px;
+    margin: 14px 0 14px 0;
+}
+.main_inputs button{
+    font-size: 16px;
+    padding: 4px 8px 4px 8px;
+    border-radius: 2px;
+    background-color: lightgrey;
+    border-color: darkgrey;
+    border-style: solid;
+}
+.butt_registr{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    height: 80px;
+    background-color: #263238;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fix{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+
