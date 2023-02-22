@@ -1,10 +1,10 @@
 {
-  "name": "pz_2_3",
+  "name": "task1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "node index.js"
+    "serve": "node task1.js"
   },
   "keywords": [],
   "author": "",
