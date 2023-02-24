@@ -13,4 +13,4 @@ function array(arr){
     return console.log(temp)
 }
 
-array([1,2]);
+array([1,1,5,1,1]);
