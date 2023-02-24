@@ -1,0 +1,21 @@
+{
+  "name": "pz_2.3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "task_1.js",
+  "scripts": {
+    "tasl_1": "node task_1.js",
+    "task_2": "node task_2.js",
+    "task_3": "node task_3.js",
+    "task_4": "node task_4.js"
+  },
+  "author": "Denis Kozlov",
+  "license": "ISC",
+  "dependencies": {
+    "cli-color": "^2.0.3",
+    "cowsay": "^1.5.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "play-sound": "^1.1.5"
+  }
+}
