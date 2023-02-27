@@ -1,0 +1,34 @@
+
+
+.book-info{
+    display: flex;
+    border-bottom: #11119b 3px solid;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.book-dscrp{
+    display: flex;
+    border-bottom: #11119b 3px solid;
+    margin-right: 20px;
+    margin-left: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.book-author{
+    display: flex;
+    border-bottom: #11119b 3px solid;
+    margin-right: 20px;
+    margin-left: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.book-content{
+   text-align: center;
+}
