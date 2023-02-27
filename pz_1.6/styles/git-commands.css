@@ -1,0 +1,17 @@
+.columns-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.bold-command{
+    font-weight: bold;
+}
+.command-description{
+    color:gray;
+    margin-top: 10px
+;
+}

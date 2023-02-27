@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/git-commands.css">
+</head>
+<body>
+<header class="header">
+    <div id="blog">
+        <h1 style="color:black;font-size: 20px">Мій особистий блог</h1>
+        <h4 style="color:white;">Марченко Владлен</h4>
+    </div>
+    <div class="log-reg">
+        <a style="margin-right: 15px" href="login.html">Вхід</a>
+        <a style="margin-right: 15px" href="register.html">Реєстрація</a>
+        <a style="margin-right: 15px" href="git_commands.html">GIT commands</a>
+    </div>
+
+</header>
+<div style="background-color:red;width: 100%; height: 2px"></div>
+<main>
+    <div class="columns-div">
+        <div>
+            <div>
+                <h2 style="color:skyblue">Create a repository</h2>
+                <p class="command-description">
+                    From scratch -- Create a new local repository
+                </p>
+                <p class="bold-command">
+                    $ git init [project name]
+                </p>
+
+                <p class="command-description">
+                    Download from an existing repository
+                </p>
+                <p class="bold-command">
+                    $ git clone my_url
+                </p>
+            </div>
+            <div style="margin-top: 25px">
+                <h2 style="color:steelblue">
+                    Observe your Repository
+                </h2>
+
+                <p class="command-description">
+                    List new or modified files not yet committed
+                </p>
+                <p class="bold-command">
+                    $ git status
+                </p>
+
+                <p class="command-description">
+                    Show the changes to files not yet staged
+                </p>
+                <p class="bold-command">
+                    $ git diff
+                </p>
+
+                <p class="command-description">
+                    Show the changes to staged files
+                </p>
+                <p class="bold-command">
+                    $ git diff --cached
+                </p>
+
+                <p class="command-description">
+                    Show all staged and unstaged file changes
+                </p>
+                <p class="bold-command">
+                    $ git diff HEAD
+                </p>
+
+                <p class="command-description">
+                    Show the changes between two commit ids
+                </p>
+                <p class="bold-command">
+                    $ git diff commit1 commit2
+                </p>
+
+                <p class="command-description">
+                    List the charge dates and authors for a file
+                </p>
+                <p class="bold-command">
+                    $ git blame [file]
+                </p>
+
+                <p class="command-description">
+                    Show the file changes for a commit id and/or file
+                </p>
+                <p class="bold-command">
+                    $ git show (commit): (fle)
+                </p>
+
+                <p class="command-description">
+                    Show full change history
+                </p>
+                <p class="bold-command">
+                    $ git log
+                </p>
+
+                <p class="command-description">
+                    Show change history for file/directory inducing diffs
+                </p>
+                <p class="bold-command">
+                    $ git log -p [file/directory]
+                </p>
+            </div>
+        </div>
+        <div>
+            <h2 style="color:yellowgreen">
+                Working with Branches
+            </h2>
+
+            <p class="command-description">
+                List all local branches
+            </p>
+            <p class="bold-command">
+                $ git branch
+            </p>
+
+            <p class="command-description">
+                List all branches, local and remote
+            </p>
+            <p class="bold-command">
+                $ git branch -av
+            </p>
+
+            <p class="command-description">
+                Switch to a branch, my branch, and update working directory
+            </p>
+            <p class="bold-command">
+                $ git checkout my_branch
+            </p>
+
+            <p class="command-description">
+                Create a new branch called new_branch
+            </p>
+            <p class="bold-command">
+                $ git branch new_branch
+            </p>
+
+            <p class="command-description">
+                Delete the branch called my_branch
+            </p>
+            <p class="bold-command">
+                $ git branch -d my_branch
+            </p>
+
+            <p class="command-description">
+                Merge branch_a into branch_b
+            </p>
+            <p class="bold-command">
+                $ git checkout branch_b
+            </p>
+            <p class="bold-command">
+                $ git merge branch_a
+            </p>
+
+            <p class="command-description">
+                Tag the current commit
+            </p>
+            <p class="bold-command">
+                $ git tag my_tag
+            </p>
+        </div>
+        <div>
+            <h2 style="color:forestgreen">
+                Make a change
+            </h2>
+
+            <p class="command-description">
+                Stages the file, ready for commit
+            </p>
+            <p class="bold-command">
+                $ git add [file]
+            </p>
+
+
+            <p class="command-description">
+                Stage all changed files, ready for commit
+            </p>
+            <p class="bold-command">
+                $ git add .
+            </p>
+
+
+            <p class="command-description">
+                Commit all staged files to versioned history
+            </p>
+            <p class="bold-command">
+                $ git commit -m "commit message"
+            </p>
+
+
+            <p class="command-description">
+                Commit all your tracked files to versioned history
+            </p>
+            <p class="bold-command">
+                $ git commit -an "commit message"
+            </p>
+
+
+            <p class="command-description">
+                Unstages file, keeping the file changes
+            </p>
+            <p class="bold-command">
+                $ git reset [file]
+            </p>
+
+
+            <p class="command-description">
+                Revert everything to the last commit
+            </p>
+            <p class="bold-command">
+                $ git reset --hard
+            </p>
+
+        </div>
+        <div>
+            <div>
+                <h2 style="color:orangered">
+                    Synchronize
+                </h2>
+
+                <p class="command-description">
+                    Get the latest changes from origin (no merge)
+                </p>
+                <p class="bold-command">
+                    $ git fetch
+                </p>
+
+                <p class="command-description">
+                    Fetch the latest changes from origin and merge
+                </p>
+                <p class="bold-command">
+                    $ git pull
+                </p>
+
+                <p class="command-description">
+                    Fetch the latest changes from origin and rebase
+                </p>
+                <p class="bold-command">
+                    $ git pull --rebase
+                </p>
+
+                <p class="command-description">
+                    Push local changes to the origin
+                </p>
+                <p class="bold-command">
+                    $ git push
+                </p>
+            </div>
+            <div style="margin-top: 25px;">
+                <h2 style="color:firebrick">
+                    Finally!
+                </h2>
+
+                <p class="command-description">
+                    When in doubt, use git help
+                </p>
+                <p class="bold-command">
+                    $ git command --help
+                </p>
+
+                <p class="command-description">
+                    Or visit <a href="https://training.github.com/">https://training.github.com/</a> for official GitHub
+                    training.
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <h5>&copy;Всі права захищені</h5>
+    <h5>Розробник: курсант 203 навчальної групи Марченков В.П.</h5>
+</footer>
+</body>
+</html>
