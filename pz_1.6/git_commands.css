@@ -1,0 +1,51 @@
+.main{
+    display: flex;
+}
+
+.column {
+    margin: 0 10px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.color-blue {
+    color: rgb(106, 106, 235);
+}
+
+.info_h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.command_info {
+    margin-top: 10px;
+}
+
+.command {
+    font-weight: bold;
+}
+
+.color-navy {
+    color: navy;
+}
+
+.color-salat {
+    color: greenyellow;
+}
+
+.few_command {
+    margin-bottom: 7px !important;
+}
+
+.color-green {
+    color: green;
+}
+
+.color-orange {
+    color: orange;
+}
+
+.color-red {
+    color: red;
+}
