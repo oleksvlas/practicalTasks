@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    border: rgb(126, 126, 133) 2px solid;
+    padding: 5px;
+}
+
+.content .link{
+    display: flex;
+    justify-content: right;
+}
+
+.content a{
+    text-decoration: none;
+}
+
+.content .description{
+    margin: 0 0 0 50;
+}
+
+.size1 {
+    height: 36vh;
+    width: 15vw;
+}
+
+
+
+
+
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.registration{
+    border: gray 2px solid;
+    width: 450px;
+    height: 500px;
+}
+
+.container {
+    margin: 100px 0;
+    display: flex;
+    justify-content:space-around;
+}
+
+.registration .title {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(38, 86, 158);
+}
+
+.registration .content{
+    margin: 75px 15px;
+}
+
+.registration .content input{
+    width: 300px;
+}
+
+.row {
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+.btn {
+    text-align: right;
+    padding: 5px 20px;
+}

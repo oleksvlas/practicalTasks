@@ -1,0 +1,43 @@
+.header{
+    background-color: rgb(38, 86, 158);
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: red 5px solid;
+    list-style: none;
+}
+
+.header .description{
+    margin: 0 0 0 20px;
+}
+
+.header .title{
+    margin: 5px 0;
+}
+
+.header .author{
+    color: white;
+    margin: 0 0 0 30px;
+}
+
+.header ul{
+    display: flex;
+    flex-direction: row;    
+    justify-content: right;
+    margin: 10% 10px 0 0;
+    font-size: 25px;
+    list-style: none;
+}
+
+.header ul li{
+    margin: 0 0 0 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
