@@ -1,0 +1,47 @@
+[
+  {
+    "number": 1,
+    "text": "Яка мова програмування найпопулярніша?",
+    "A": "Java",
+    "B": "Java Script",
+    "C": "Python",
+    "D": "C++",
+    "correct": "Python"
+  },
+  {
+    "number": 2,
+    "text": "Яка мова програмування найпопулярніша?",
+    "A": "Java",
+    "B": "Java Script",
+    "C": "Python",
+    "D": "C++",
+    "correct": "Python"
+  },
+  {
+    "number": 3,
+    "text": "Яка мова програмування найпопулярніша?",
+    "A": "Java",
+    "B": "Java Script",
+    "C": "Python",
+    "D": "C++",
+    "correct": "Python"
+  },
+  {
+    "number": 4,
+    "text": "Яка мова програмування найпопулярніша?",
+    "A": "Java",
+    "B": "Java Script",
+    "C": "Python",
+    "D": "C++",
+    "correct": "Python"
+  },
+  {
+    "number": 5,
+    "text": "Яка мова програмування найпопулярніша?",
+    "A": "Java",
+    "B": "Java Script",
+    "C": "Python",
+    "D": "C++",
+    "correct": "Python"
+  }
+]
