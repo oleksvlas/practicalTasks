@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Вітаємо, <%= name %></h1>
+
+<h3>Тест</h3>
+
+<form action="/game" method="post">
+
+    <div>
+        <% questions.forEach((question)=>{ %>
+
+            Запитання № <%= question.number %>:
+
+            <div class="<%= answers.length === 0 ? "" : answers[question.number - 1].isValid ? 'valid' : 'invalid' %>">
+
+                <%= question.text %>
+
+                <select name="<%= question.number %>" style="margin-top: 2vh">
+                    <option value="<%= question.A %>"><%= question.A %></option>
+                    <option value="<%= question.B %>"><%= question.B %></option>
+                    <option value="<%= question.C %>"><%= question.C %></option>
+                    <option value="<%= question.D %>"><%= question.D %></option>
+                </select>
+
+                 <%= answers.length === 0 ? "" : question.correct%>
+
+                <br>
+            </div>
+
+
+        <% }); %>
+    </div>
+
+    <button type="submit" style="margin-top: 1vh">Відповісти</button>
+</form>
+
+<style>
+    .invalid {
+        background-color: red;
+    }
+    .valid {
+        background-color: greenyellow;
+    }
+</style>
+
+<form action="/" method="get">
+    <button type="submit">Назад</button>
+</form>
+</body>
+</html>
