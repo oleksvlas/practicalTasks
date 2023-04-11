@@ -1,0 +1,68 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<header>
+    <a href="/serviceman/">main</a>
+    <a href="/serviceman/create">create</a>
+</header>
+
+<body>
+
+<div class="container">
+    <div class="">
+        <h1>MongoDB</h1>
+        <div class="mongo">
+            <% for (let i = 0; i < servicemenMongoDb.length; i++) {
+                let serviceman = servicemenMongoDb[i] %>
+            <%= i + 1 %>) ID-<%= serviceman.id %> <br>
+            name: <%= serviceman.name %> <br>
+            surname: <%= serviceman.surname %> <br>
+            third name: <%= serviceman.thirdName %> <br>
+            rank: <%= serviceman.rank %> <br>
+            date of birth - <%= serviceman.dateOfBirth.toLocaleString() %>
+            <hr>
+            <% } %>
+        </div>
+    </div>
+
+    <div class="">
+        <h1>Postgresql</h1>
+        <div class="postgresql">
+            <% for (let i = 0; i < servicemenPostgresql.length; i++) {
+                let serviceman = servicemenPostgresql[i] %>
+            <%= i + 1 %>) ID-<%= serviceman.id %> <br>
+            name: <%= serviceman.name %> <br>
+            surname: <%= serviceman.surname %> <br>
+            third name: <%= serviceman.thirdName %> <br>
+            rank: <%= serviceman.rank %> <br>
+            date of birth - <%= serviceman.dateOfBirth.toLocaleString() %>
+            <hr>
+            <% } %>
+        </div>
+    </div>
+    <div>
+
+    </div>
+</div>
+
+</body>
+</html>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .mongo .postgresql {
+        border: black 2px solid;
+        padding: 2vh
+    }
+</style>

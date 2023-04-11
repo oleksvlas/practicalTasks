@@ -1,0 +1,41 @@
+<!document html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<header>
+    <a href="/serviceman/">main</a>
+    <a href="/serviceman/create">create</a>
+</header>
+<body>
+<div>
+    <form action="/serviceman/create" method="post">
+        <label>
+            name:
+            <input type="text" name="name" required>
+        </label> <br>
+        <label>
+            surname:
+            <input type="text" name="surname" required>
+        </label> <br>
+        <label>
+            third name:
+            <input type="text" name="thirdName" required>
+        </label> <br>
+        <label>
+            rank:
+            <input type="text" name="rank" required>
+        </label> <br>
+        <label>
+            date of birth:
+            <input type="date" name="dateOfBirth" required>
+        </label> <br>
+
+        <button type="submit">Create</button>
+    </form>
+</div>
+</body>
+</html>
