@@ -14,6 +14,7 @@
 
 <body>
 
+<h1>Servicemen</h1>
 <div class="container">
     <div class="">
         <h1>MongoDB</h1>
@@ -25,8 +26,11 @@
             surname: <%= serviceman.surname %> <br>
             third name: <%= serviceman.thirdName %> <br>
             rank: <%= serviceman.rank %> <br>
-            date of birth - <%= serviceman.dateOfBirth.toLocaleString() %>
+            date of birth - <%= serviceman.dateOfBirth.toLocaleString() %> <br>
+
+            <a href="/serviceman/<%= serviceman.id %>/type/mongodb">Переглянути</a>
             <hr>
+            <br>
             <% } %>
         </div>
     </div>
@@ -41,13 +45,44 @@
             surname: <%= serviceman.surname %> <br>
             third name: <%= serviceman.thirdName %> <br>
             rank: <%= serviceman.rank %> <br>
-            date of birth - <%= serviceman.dateOfBirth.toLocaleString() %>
+            date of birth - <%= serviceman.dateOfBirth.toLocaleString() %> <br>
+
+            <a href="/serviceman/<%= serviceman.id %>/type/postgresql">Переглянути</a>
             <hr>
+            <br>
             <% } %>
         </div>
     </div>
-    <div>
+</div>
 
+<hr>
+
+<h1>Units</h1>
+<div class="container">
+    <div class="">
+        <h1>MongoDb</h1>
+        <div class="mongo">
+            <% for(let i = 0; i < unitsMongoDb.length; i++) {
+                let unit = unitsMongoDb[i] %>
+            <%= i+1 %>) ID: <%= unit.id %> <br>
+            name: <%= unit.name %> <br>
+            <a href="/unit/<%= unit.id %>/type/mongodb">Переглянути</a> <br>
+            <hr>
+            <% } %>
+        </div>
+
+    </div>
+    <div class="">
+        <h1>Postgresql</h1>
+        <div class="postgresql">
+            <% for(let i = 0; i < unitsPostgresql.length; i++) {
+                let unit = unitsPostgresql[i] %>
+            <%= i+1 %>) ID: <%= unit.id %> <br>
+            name: <%= unit.name %> <br>
+            <a href="/unit/<%= unit.id %>/type/postgresql">Переглянути</a> <br>
+            <hr>
+            <% } %>
+        </div>
     </div>
 </div>
 

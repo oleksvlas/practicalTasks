@@ -1,13 +1,14 @@
 import mongoose from "mongoose";
 
-export const Unit = mongoose.model("units", new mongoose.Schema({
+export const Position = mongoose.model("positions", new mongoose.Schema({
     name: String,
     serviceman: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Units"
+        ref: "servicemen"
     },
-    position: {
+    unit: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Positions"
+        ref: "units"
     }
 }))
+

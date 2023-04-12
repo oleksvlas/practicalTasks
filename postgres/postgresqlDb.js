@@ -1,7 +1,7 @@
 import {Sequelize} from "sequelize";
-import {defineServicemen} from "./servicemanModel.js";
-import {defineUnit} from "./unitModel.js";
-import {definePosition} from "./positionModel.js";
+import {defineServicemen} from "./model/servicemanModel.js";
+import {defineUnit} from "./model/unitModel.js";
+import {definePosition} from "./model/positionModel.js";
 
 let dbConfig = {
     USER: 'postgres',
