@@ -1,0 +1,79 @@
+<!document html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<header>
+    <a href="/serviceman">main</a>
+    <a href="/serviceman/create">create</a>
+</header>
+
+<body>
+Unit <br>
+ID: <%= unit.id %> <br>
+name: <%= unit.name %> <br>
+
+<hr>
+
+Positions: <br>
+
+<form action="/position/create/unitId/<%= unit.id %>/type/<%= type %>" method="post"
+      style="border: black 2px solid; padding: 2vh">
+    <label>name
+        <input type="text" name="name">
+    </label> <br>
+
+    <button type="submit">create</button>
+</form>
+
+<hr>
+
+<% for (let i = 0; i < positions.length; i++) {
+    let position = positions[i] %>
+ID: <%= position.id %> <br>
+name: <%= position.name %> <br>
+
+<% if (type === "mongodb") { %>
+    <hr>
+    unit_id: <%= position.unit %> <br>
+    <hr>
+    serviceman_id: <%= position.serviceman %> <br>
+    <hr>
+    <% if (position.serviceman === undefined) { %>
+        <form action="/position/id/<%= position.id %>/serviceman/type/<%= type %>" method="post">
+            <select name="serviceman" id="">
+                <% for (let j = 0; j < freeServicemen.length; j++) {
+                    let serviceman = freeServicemen[j] %>
+                <option value="<%= serviceman.id %>"><%= serviceman.name %> <%= serviceman.surname %></option>
+                <% } %>
+
+            </select>
+            <button type="submit">Добавити</button>
+        </form>
+<% }
+} else { %>
+    <hr>
+    unit_id: <%= position.unitId %> <br>
+    <hr>
+    serviceman_id: <%= position.servicemenId %> <br>
+    <hr>
+    <% if (position.servicemenId === null) { %>
+        <form action="/position/id/<%= position.id %>/serviceman/type/<%= type %>" method="post">
+            <select name="serviceman" id="">
+                <% for (let j = 0; j < freeServicemen.length; j++) {
+                    let serviceman = freeServicemen[j] %>
+                <option value="<%= serviceman.id %>"><%= serviceman.name %> <%= serviceman.surname %></option>
+                <% } %>
+
+            </select>
+            <button type="submit">Добавити</button>
+        </form>
+<% } %>
+<% }} %>
+
+</body>
+</html>
